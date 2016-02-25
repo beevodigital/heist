@@ -1,0 +1,126 @@
+# P-ROC Game Description file a sample machine using PDBs (PinballControllers.com Driver Boards)
+PRGame:
+    machineType: pdb
+    numBalls: 4
+PRFlippers:
+    - flipperLwR
+    - flipperLwL
+PRBumpers:
+    - slingl
+    - slingr
+    - popl
+    - popr
+    - popm
+PRSwitches:
+    # **** Format ****
+    # name:
+    #   number: <number>
+    #   type: <type>
+    #
+    #   <number> can be: SDx (Dedicated switch, x = P-ROC input) (valid x's are 0-32)
+    #                    c/r (Matrix switch, c = column, r = row
+    #                        Note - valid columns are 0-7, valid rows are 0-15
+    #   <type> can be: 'NO' (normally open.  This is the default; so no need to use this)
+    #                  'NC' (normally closed.  Common for optos)
+
+
+    # flippers shown below are examples of dedicated switches
+    flipperLwR:
+        number: SD1
+
+    flipperLwL:
+        number: SD2
+
+    slingr:
+        number: SD0
+
+    slingl:
+        number: SD3
+
+    popl:
+        number: SD4
+
+    popr:
+        number: SD5
+
+    popm:
+        number: SD6
+
+###### NEED TO BE ASSIGNED TO REAL NUMBERS
+    leftTrough:
+        number: SD7
+    centerTrough:
+        number: SD8
+    rightTrough:
+        number: SD9
+    startButton:
+        number: SD10
+    outhole:
+        number: SD11
+
+
+# Coil numbering format: Ax-By-z:
+
+# Capital letters are required, lower case letters represent the numbers:
+# x : Board address (0-7)
+# y : Bank address (0 for A, 1 for B)
+# z : Output number (0-7)
+
+PRCoils:
+    flipperLwRMain: 
+        number: A0-B1-4
+    flipperLwRHold: 
+        number: A0-B1-3
+    flipperLwLMain: 
+        number: A0-B1-0
+    flipperLwLHold: 
+        number: A0-B1-1
+    slingl: 
+        number: A0-B1-2
+    slingr: 
+        number: A0-B1-5
+    popl: 
+        number: A0-B0-0
+    popr: 
+        number: A0-B0-1
+    popm: 
+        number: A0-B0-3
+    outhole:
+        number: A0-B0-4
+
+# Lamp numbering format: C-Ax-By-z:R-Am-Bn-p:
+
+# Capital letters are required, lower case letters represent the numbers:
+# For Columns (Source circuits - represented by the 'C')
+# x : Column board address (0-7)
+# y : Column bank address (0 for A, 1 for B)
+# z : Output number (0-7)
+
+# For Rows (Sink circuits - represented by the 'R')
+# m : Row board address (0-7)
+# n : Row bank address (0 for A, 1 for B)
+# p : Output number (0-7)
+
+
+PRLamps:
+    testLamp:
+        number: C-A1-B0-0:R-A1-B1-0
+    VUK_right_b:
+        number: C-A1-B0-0:R-A1-B1-1
+    VUK_right_g:
+        number: C-A1-B0-0:R-A1-B1-2
+    VUK_left_g:
+        number: C-A1-B0-0:R-A1-B1-3
+    VUK_left_b:
+        number: C-A1-B0-0:R-A1-B1-4
+    VUK_left_r:
+        number: C-A1-B0-0:R-A1-B1-5
+
+#### NEEDS ASSIGNING
+    startButton:
+        number: C-A1-B0-0:R-A1-B1-6
+
+PRDriverGlobals:
+    lamp_matrix_strobe_time: 200
+    use_watchdog: True
+    watchdog_time: 1000
