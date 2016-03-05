@@ -86,6 +86,8 @@ def main():
 	game = None
 	try:
 	 	game = HeistGame()
+	 	print('flippers enabled')
+	 	game.enable_flippers(True)
 		game.run_loop()
 	finally:
 		del game

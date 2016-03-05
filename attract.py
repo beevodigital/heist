@@ -25,6 +25,7 @@ class PrepareToStart(procgame.game.Mode):
 	
 	def check_ready(self):
 		"""Perform checks on the system state to see if we are ready to start the game."""
+		print(self.game.trough.is_full())
 		if self.game.trough.is_full():
 			self.ready()
 			return True

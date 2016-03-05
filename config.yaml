@@ -1,6 +1,6 @@
 config_path: ~/PROC/shared/config
 font_path: [/home/pi/PROC/shared/dmd]
-pinproc_class: procgame.fakepinproc.FakePinPROC
+#pinproc_class: procgame.fakepinproc.FakePinPROC
 keyboard_switch_map:
     # Enter, Up, Down, Exit
     3: SD3
@@ -8,6 +8,6 @@ keyboard_switch_map:
     1: SD1
     0: SD0
     # Start:
-    s: 10
+    s: 11
     z: SF4
     /: SF2

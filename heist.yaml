@@ -1,7 +1,7 @@
 # P-ROC Game Description file a sample machine using PDBs (PinballControllers.com Driver Boards)
 PRGame:
     machineType: pdb
-    numBalls: 4
+    numBalls: 3
 PRFlippers:
     - flipperLwR
     - flipperLwL
@@ -26,37 +26,37 @@ PRSwitches:
 
     # flippers shown below are examples of dedicated switches
     flipperLwR:
-        number: SD1
+        number: SD9
 
     flipperLwL:
-        number: SD2
+        number: SD8
 
     slingr:
-        number: SD0
+        number: SD11
 
     slingl:
-        number: SD3
+        number: SD10
 
     popl:
-        number: SD4
+        number: SD26
 
     popr:
-        number: SD5
+        number: SD24
 
     popm:
-        number: SD6
+        number: SD25
 
 ###### NEED TO BE ASSIGNED TO REAL NUMBERS
     leftTrough:
-        number: SD7
+        number: SD14
     centerTrough:
-        number: SD8
+        number: SD13
     rightTrough:
-        number: SD9
+        number: SD12
     startButton:
-        number: SD10
-    outhole:
-        number: SD11
+        number: SD15
+    launch:
+        number: SD16
 
 
 # Coil numbering format: Ax-By-z:
@@ -68,7 +68,7 @@ PRSwitches:
 
 PRCoils:
     flipperLwRMain: 
-        number: A0-B1-4
+        number: A0-B1-2
     flipperLwRHold: 
         number: A0-B1-3
     flipperLwLMain: 
@@ -76,17 +76,19 @@ PRCoils:
     flipperLwLHold: 
         number: A0-B1-1
     slingl: 
-        number: A0-B1-2
-    slingr: 
         number: A0-B1-5
+    slingr: 
+        number: A0-B1-4
     popl: 
-        number: A0-B0-0
-    popr: 
-        number: A0-B0-1
-    popm: 
         number: A0-B0-3
-    outhole:
-        number: A0-B0-4
+    popr: 
+        number: A0-B0-0
+    popm: 
+        number: A0-B0-1
+    trough:
+        number: A0-B1-7
+    launch:
+        number: A0-B1-6
 
 # Lamp numbering format: C-Ax-By-z:R-Am-Bn-p:
 
