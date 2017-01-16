@@ -45,6 +45,8 @@ PRSwitches:
 
     popm:
         number: SD25
+    ship:
+        number: SD23
 
 ###### NEED TO BE ASSIGNED TO REAL NUMBERS
     leftTrough:
@@ -55,8 +57,13 @@ PRSwitches:
         number: SD12
     startButton:
         number: SD15
-    launch:
+    outhole:
         number: SD16
+
+    shipUp:
+        number: SD100
+    shipDown:
+        number: SD101
 
 
 # Coil numbering format: Ax-By-z:
@@ -67,23 +74,23 @@ PRSwitches:
 # z : Output number (0-7)
 
 PRCoils:
-    flipperLwRMain: 
+    flipperLwRMain:
         number: A0-B1-2
-    flipperLwRHold: 
+    flipperLwRHold:
         number: A0-B1-3
-    flipperLwLMain: 
+    flipperLwLMain:
         number: A0-B1-0
-    flipperLwLHold: 
+    flipperLwLHold:
         number: A0-B1-1
-    slingl: 
+    slingl:
         number: A0-B1-5
-    slingr: 
+    slingr:
         number: A0-B1-4
-    popl: 
+    popl:
         number: A0-B0-3
-    popr: 
+    popr:
         number: A0-B0-0
-    popm: 
+    popm:
         number: A0-B0-1
     trough:
         number: A0-B1-7
@@ -105,6 +112,10 @@ PRCoils:
 
 
 PRLamps:
+    stepperStep:
+        number: L6
+    stepperDirection:
+        number: L3
     testLamp:
         number: C-A1-B0-0:R-A1-B1-0
     VUK_right_b:

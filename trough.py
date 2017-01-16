@@ -20,8 +20,8 @@ class Trough(procgame.game.Mode):
 	### Is this supposed to be the launch button?
 	def mode_started(self):
 		self._update_ball_count()
-		if self.game.switches.outhole.is_active():
-			self.game.coils.outhole.pulse()
+		#if self.game.switches.outhole.is_active():
+		#	self.game.coils.outhole.pulse()
 	
 	def is_full(self):
 		return self.ball_count == self.game.num_balls_total

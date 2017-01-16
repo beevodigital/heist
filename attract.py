@@ -50,8 +50,23 @@ class PrepareToStart(procgame.game.Mode):
 		self.game.start_game()
 		# Add the first player
 		self.game.add_player()
+		self.game.add_player()
+		self.game.add_player()
+		self.game.add_player()
 		# Start the ball.  This includes ejecting a ball from the trough.
 		self.game.start_ball()
+	
+	#stepper switched
+	def sw_shipUp_active(self,sw):
+		print("in")
+		self.game.lamps.stepperDirection.enable()
+	 	self.game.lamps.stepperStep.patter(on_time=1,off_time=1)
+	def sw_shipDown_active(self,sw):
+		self.game.lamps.stepperDirection.disable()
+	 	self.game.lamps.stepperStep.patter(on_time=1,off_time=1)
+ 	def sw_ship_active(self,sw):
+ 		self.game.lamps.stepperDirection.enable()
+	 	self.game.lamps.stepperStep.patter(on_time=1,off_time=1)
 
 
 
@@ -68,7 +83,7 @@ class Attract(procgame.game.Mode):
 	def mode_started(self):
 		#self.pre_game_display()
 		print('in mode started Attract')
-		self.heistIntro = procgame.dmd.TextLayer(128/2, 7, font_jazz18, "center", opaque=True).set_text("THE HEIST")
+		self.heistIntro = procgame.dmd.TextLayer(128/2, 7, font_jazz18, "center", opaque=True).set_text("BLACKBEARD")
 		self.basicCreds = procgame.dmd.TextLayer(128/2, 12, font_09Bx7, "center", opaque=True).set_text("BY BRIAN")
 		self.basicCredsSeconday = procgame.dmd.TextLayer(128/2, 12, font_09Bx7, "center", opaque=True).set_text("RYAN BRANDON")
 		self.press_start = procgame.dmd.TextLayer(128/2, 12, font_09Bx7, "center", opaque=True).set_text("PRESS START")
