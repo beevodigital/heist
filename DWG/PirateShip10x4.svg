@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="276.482mm" height="181.404mm"
+ viewBox="0 0 1611 1057"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>Qt SVG Document</title>
+<desc>Generated with Qt</desc>
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family=".SF NS Text" font-size="26.7222" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,0 L1611,0 L1611,1057 L0,1057 L0,0"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".SF NS Text" font-size="26.7222" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(1,0,0,1,0,0)"
+font-family=".SF NS Text" font-size="26.7222" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(1,0,0,1,0,0)"
+font-family=".SF NS Text" font-size="26.7222" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".SF NS Text" font-size="26.7222" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="non-scaling-stroke" points="128.722,672.902 118.219,624.587 121.376,618.801 124.67,613.092 128.098,607.463 131.66,601.917 135.353,596.457 139.175,591.087 143.124,585.81 147.198,580.628 151.394,575.545 155.709,570.563 160.142,565.686 164.69,560.915 169.351,556.254 174.121,551.705 178.998,547.271 183.979,542.955 189.062,538.759 194.243,534.685 199.52,530.735 204.89,526.912 210.349,523.219 215.894,519.656 221.523,516.226 227.232,512.932 233.017,509.774 238.876,506.755 244.806,503.877 250.802,501.141 256.862,498.548 307.269,476.843 358.174,456.335 409.549,437.033 461.365,418.948 513.594,402.091 566.205,386.472 619.171,372.098 672.461,358.977 726.045,347.118 779.895,336.527 833.979,327.209 888.269,319.17 942.732,312.414 997.34,306.945 1052.06,302.766 1106.87,299.879 1161.73,298.286 1216.61,297.988 1271.48,298.986 1282.57,299.365 1293.64,300.01 1304.7,300.92 1315.73,302.096 1326.73,303.536 1337.7,305.239 1348.62,307.205 1359.49,309.433 1370.3,311.92 1381.05,314.666 1391.73,317.669 1402.34,320.928 1412.86,324.44 1423.3,328.204 1433.64,332.216 1443.89,336.476 1454.03,340.981 1464.05,345.727 1473.97,350.712 1483.75,355.934 1493.42,361.389 1502.94,367.075 1512.33,372.987 1506.49,381.502 1500.46,389.877 1494.22,398.107 1487.79,406.187 1481.18,414.114 1474.38,421.882 1467.4,429.488 1460.24,436.928 1452.91,444.196 1445.4,451.289 1437.74,458.204 1429.91,464.935 1421.93,471.48 1413.79,477.835 1405.5,483.997 1397.08,489.961 1388.51,495.725 1379.81,501.285 1370.98,506.638 1362.03,511.782 1352.96,516.713 1343.78,521.429 1334.48,525.927 1325.09,530.204 1315.59,534.259 1254.73,557.214 1193.35,578.761 1131.49,598.888 1069.19,617.584 1006.47,634.84 943.373,650.646 879.926,664.995 816.165,677.877 752.125,689.287 687.839,699.219 623.341,707.667 558.665,714.626 493.846,720.094 428.919,724.066 363.917,726.542 298.875,727.519 291.894,727.411 284.917,727.137 277.949,726.699 270.993,726.097 264.053,725.331 257.133,724.401 250.237,723.308 243.368,722.053 236.532,720.635 229.73,719.057 222.968,717.319 216.249,715.422 209.576,713.367 202.953,711.154 196.385,708.786 189.874,706.264 183.425,703.589 177.041,700.762 170.725,697.786 164.481,694.661 158.313,691.389 152.223,687.973 146.216,684.415 140.295,680.715 134.462,676.877 128.722,672.902 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="5.44257,848.523 5.44257,208.477 1605.56,208.477 1605.56,848.523 5.44257,848.523 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".SF NS Text" font-size="26.7222" font-weight="400" font-style="normal" 
+>
+</g>
+</g>
+</svg>
