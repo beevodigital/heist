@@ -1,7 +1,7 @@
 # P-ROC Game Description file a sample machine using PDBs (PinballControllers.com Driver Boards)
 PRGame:
     machineType: pdb
-    numBalls: 3
+    numBalls: 3x
 PRFlippers:
     - flipperLwR
     - flipperLwL
@@ -116,6 +116,8 @@ PRLamps:
         number: L6
     stepperDirection:
         number: L3
+    #stepperSleep:
+    #    number: L8
     testLamp:
         number: C-A1-B0-0:R-A1-B1-0
     VUK_right_b:

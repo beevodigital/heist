@@ -12,26 +12,26 @@ class PrepareToStart(procgame.game.Mode):
 	"""Manages waiting for the game to be ready to start."""
 	def __init__(self, game):
 		super(PrepareToStart, self).__init__(game=game, priority=9)
-	
+
 	def mode_started(self):
 		self.game.trough.changed_handlers.append(self.trough_changed)
 		self.pulse_and_delay()
-	
+
 	def mode_stopped(self):
 		self.game.trough.changed_handlers.remove(self.trough_changed)
-	
+
 	def trough_changed(self):
 		self.check_ready()
-	
+
 	def check_ready(self):
 		"""Perform checks on the system state to see if we are ready to start the game."""
 		print(self.game.trough.is_full())
 		if self.game.trough.is_full():
 			self.ready()
 			return True
-		
+
 		return False
-	
+
 	def pulse_and_delay(self):
 		ready = self.check_ready()
 		if not ready:
@@ -41,12 +41,12 @@ class PrepareToStart(procgame.game.Mode):
 			           event_type=None,
 			           delay=5.0,
 			           handler=self.pulse_and_delay)
-		
+
 	def ready(self):
 		"""Called to indicate that the game is ready to start."""
 		# Remove attract mode from mode queue - Necessary?
 		self.game.modes.remove(self)
-		# Initialize game	
+		# Initialize game
 		self.game.start_game()
 		# Add the first player
 		self.game.add_player()
@@ -55,13 +55,14 @@ class PrepareToStart(procgame.game.Mode):
 		self.game.add_player()
 		# Start the ball.  This includes ejecting a ball from the trough.
 		self.game.start_ball()
-	
+
 	#stepper switched
 	def sw_shipUp_active(self,sw):
-		print("in")
+		print("Ship Up attract.py")
 		self.game.lamps.stepperDirection.enable()
 	 	self.game.lamps.stepperStep.patter(on_time=1,off_time=1)
 	def sw_shipDown_active(self,sw):
+		print("Ship Down attract.py")
 		self.game.lamps.stepperDirection.disable()
 	 	self.game.lamps.stepperStep.patter(on_time=1,off_time=1)
  	def sw_ship_active(self,sw):
@@ -78,7 +79,7 @@ class Attract(procgame.game.Mode):
 
 
 		# TODO: Setup an attract mode layer
-	
+
 ### TODO: commented out lamps for now BDE 2/24
 	def mode_started(self):
 		#self.pre_game_display()
@@ -100,7 +101,7 @@ class Attract(procgame.game.Mode):
 		#self.game.lamps.insertPlayfieldLower.enable()
 		#self.game.lamps.insertPlayfieldMiddle.enable()
 		#self.game.lamps.insertPlayfieldUpper.enable()
-	
+
 	#def mode_stopped(self):
 		#self.game.lamps.startButton.disable()
 
