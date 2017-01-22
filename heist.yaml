@@ -1,7 +1,7 @@
 # P-ROC Game Description file a sample machine using PDBs (PinballControllers.com Driver Boards)
 PRGame:
     machineType: pdb
-    numBalls: 3x
+    numBalls: 3
 PRFlippers:
     - flipperLwR
     - flipperLwL
@@ -25,16 +25,19 @@ PRSwitches:
 
 
     # flippers shown below are examples of dedicated switches
-    flipperLwR:
-        number: SD9
-
     flipperLwL:
-        number: SD8
-
+        number: SD20
+    flipperLwR:
+        number: SD16
     slingr:
         number: SD11
-
     slingl:
+        number: SD12
+    trough1:
+        number: SD8
+    trough2:
+        number: SD9
+    trough3:
         number: SD10
 
     popl:
@@ -49,16 +52,11 @@ PRSwitches:
         number: SD23
 
 ###### NEED TO BE ASSIGNED TO REAL NUMBERS
-    leftTrough:
-        number: SD14
-    centerTrough:
-        number: SD13
-    rightTrough:
-        number: SD12
+
     startButton:
-        number: SD15
+        number: SD18
     outhole:
-        number: SD16
+        number: SD19
 
     shipUp:
         number: SD100
@@ -76,10 +74,12 @@ PRSwitches:
 PRCoils:
     flipperLwRMain:
         number: A0-B1-2
+        pulseTime: 20
     flipperLwRHold:
         number: A0-B1-3
     flipperLwLMain:
         number: A0-B1-0
+        pulseTime: 20
     flipperLwLHold:
         number: A0-B1-1
     slingl:
