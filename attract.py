@@ -59,17 +59,26 @@ class PrepareToStart(procgame.game.Mode):
 	#stepper switched
 	def sw_shipUp_active(self,sw):
 		print("Ship Up attract.py")
+		#self.game.lamps.stepperSleep.enable()
 		self.game.lamps.stepperDirection.enable()
 	 	self.game.lamps.stepperStep.patter(on_time=1,off_time=1)
+
 	def sw_shipDown_active(self,sw):
 		print("Ship Down attract.py")
+		#self.game.lamps.stepperSleep.disable()
 		self.game.lamps.stepperDirection.disable()
 	 	self.game.lamps.stepperStep.patter(on_time=1,off_time=1)
- 	def sw_ship_active(self,sw):
- 		self.game.lamps.stepperDirection.enable()
-	 	self.game.lamps.stepperStep.patter(on_time=1,off_time=1)
+ 	#def sw_ship_active(self,sw):
+ 	#	self.game.lamps.stepperDirection.enable()
+	# 	self.game.lamps.stepperStep.patter(on_time=1,off_time=1)
 
-
+	#testing sleep
+	def sw_shipSleep_active(self,sw):
+		print("Ship Sleep attract.py")
+		self.game.lamps.stepperSleep.enable()
+	def sw_shipWake_active(self,sw):
+		print("Ship Sleep attract.py")
+		self.game.lamps.stepperSleep.disable()
 
 class Attract(procgame.game.Mode):
 	"""A mode that runs whenever the game is in progress."""

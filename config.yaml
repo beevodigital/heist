@@ -10,8 +10,10 @@ keyboard_switch_map:
     # Start:
     s: 18
     l: 17
-    #u: 100
-    #d: 101
+    u: 100
+    d: 101
+    f: 102
+    w: 103
     /: SF2
     q: 9
     p: 8

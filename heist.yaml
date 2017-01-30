@@ -62,6 +62,10 @@ PRSwitches:
         number: SD100
     shipDown:
         number: SD101
+    shipSleep:
+        number: SD102
+    shipWake:
+        number: SD103
 
 
 # Coil numbering format: Ax-By-z:
@@ -116,8 +120,8 @@ PRLamps:
         number: L6
     stepperDirection:
         number: L3
-    #stepperSleep:
-    #    number: L8
+    stepperSleep:
+        number: L8
     testLamp:
         number: C-A1-B0-0:R-A1-B1-0
     VUK_right_b:
